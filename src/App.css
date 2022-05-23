@@ -36,3 +36,21 @@
     transform: rotate(360deg);
   }
 }
+
+.img-wrapper {
+  /* overflow: hidden; */
+}
+
+.custom-card  {
+  transform: scale(1);
+  transition: transform 0.1s linear 
+
+}
+
+.custom-card:hover {
+  transform: scale(1.25);
+  z-index: 1;
+ 
+  
+}
+
