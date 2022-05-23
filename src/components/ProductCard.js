@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import Card from 'react-bootstrap/Card';
-import Button from 'react-bootstrap/Button';
+// import Button from 'react-bootstrap/Button';
 
 function ProductCard({ products, filteredProducts }) {
 	const [moStyle, setMoStyle] = useState({
@@ -8,23 +8,23 @@ function ProductCard({ products, filteredProducts }) {
 		minHeight: '286px',
 	});
 
-	const changeStyleOnMouseOver = (e) => {
-		console.log(e.target.id);
-		let mouseOverStyle = {
-			minWidth: '286px',
-			minHeight: '286px',
-			transform: 'scale(1.5)',
-			zIndex: '1',
-		};
-		setMoStyle(mouseOverStyle);
-	};
-	const changeStyleOnMouseLeave = (e) => {
-		let mouseOverStyle = {
-			minWidth: '286px',
-			minHeight: '286px',
-		};
-		setMoStyle(mouseOverStyle);
-	};
+	// const changeStyleOnMouseOver = (e) => {
+	// 	console.log(e.target.id);
+	// 	let mouseOverStyle = {
+	// 		minWidth: '286px',
+	// 		minHeight: '286px',
+	// 		transform: 'scale(1.5)',
+	// 		zIndex: '1',
+	// 	};
+	// 	setMoStyle(mouseOverStyle);
+	// };
+	// const changeStyleOnMouseLeave = (e) => {
+	// 	let mouseOverStyle = {
+	// 		minWidth: '286px',
+	// 		minHeight: '286px',
+	// 	};
+	// 	setMoStyle(mouseOverStyle);
+	// };
 	let prods = products;
 	console.log(products);
 	console.log(filteredProducts);
