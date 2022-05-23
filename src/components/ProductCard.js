@@ -1,12 +1,15 @@
-import React, { useEffect, useState } from 'react';
+import React, {
+	useEffect,
+	// useState
+} from 'react';
 import Card from 'react-bootstrap/Card';
 // import Button from 'react-bootstrap/Button';
 
 function ProductCard({ products, filteredProducts }) {
-	const [moStyle, setMoStyle] = useState({
-		minWidth: '286px',
-		minHeight: '286px',
-	});
+	// const [moStyle, setMoStyle] = useState({
+	// 	minWidth: '286px',
+	// 	minHeight: '286px',
+	// });
 
 	// const changeStyleOnMouseOver = (e) => {
 	// 	console.log(e.target.id);
@@ -59,7 +62,7 @@ function ProductCard({ products, filteredProducts }) {
 										: prod.image.src)
 								}
 								onError={backupImg}
-								style={moStyle}
+								style={{ minWidth: '286px', minHeight: '286px' }}
 							/>
 							<Card.Body>
 								<Card.Title>{prod.title}</Card.Title>
